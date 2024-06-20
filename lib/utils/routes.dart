@@ -7,5 +7,6 @@ class AppRoutes
   static Map<String, Widget Function(BuildContext)>  routes = {
     '/':(context)=>HomeScreen(),
     '/home':(context)=>AddStudent(),
+
   };
 }

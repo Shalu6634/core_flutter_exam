@@ -18,7 +18,7 @@ class HomeScreen extends StatefulWidget {
 
 ImagePicker imagePicker = ImagePicker();
 File? img;
-
+int select=0;
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
@@ -26,6 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         actions: [
           GestureDetector(onTap: (){
+
             Navigator.of(context).pushNamed('/home');
           },child: Padding(
             padding: const EdgeInsets.all(8.0),
